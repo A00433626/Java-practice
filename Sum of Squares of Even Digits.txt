@@ -1,0 +1,21 @@
+import java.util.*;
+import java.io.*;
+public class Main
+{
+	public static void main(String args[])throws Exception
+	{
+	BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+	String s=bf.readLine();
+	int len=s.length();
+	int sum=0;
+	for(int i=0;i<len;i++)
+	{
+		if(Character.valueOf(s.charAt(i))%2==0 )
+		{
+			int v=Character.getNumericValue(s.charAt(i));
+			sum=sum+(v*v);
+		}
+	}
+	System.out.println(sum);
+	}
+}
