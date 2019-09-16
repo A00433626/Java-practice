@@ -1,0 +1,21 @@
+import java.util.*;
+import java.io.*;
+import java.text.SimpleDateFormat;
+public class Main
+{
+	public static void main(String args[])throws Exception
+	{
+	BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+	SimpleDateFormat  da=new SimpleDateFormat("h:mm:ss a");
+	String s=bf.readLine();
+	try
+	{
+		Date d=da.parse(s);
+		System.out.println("Valid");
+	}
+	catch(Exception e)
+	{
+		System.out.println("Invalid");
+	}
+	}
+}
