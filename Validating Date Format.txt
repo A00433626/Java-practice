@@ -1,0 +1,28 @@
+import java.util.*;
+import java.io.*;
+import java.text.SimpleDateFormat;
+public class Main
+{
+	public static void main(String args[])throws Exception
+	{
+	BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+	SimpleDateFormat  da=new SimpleDateFormat("dd/MM/yyyy");
+	String s=bf.readLine();
+	if(s.matches("[0-9]{2}/[0-9]{2}/[0-9]{4}"))
+	{
+	try
+	{
+	Date d=da.parse(s);
+	System.out.println("Valid");
+	}
+	catch(Exception e)
+	{
+		System.out.println("Invalid format");
+	}
+	}
+	else
+		System.out.println("Invalid");
+	
+	
+	}
+}
