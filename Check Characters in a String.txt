@@ -1,0 +1,16 @@
+import java.util.*;
+import java.io.*;
+public class Main
+{
+	public static void main(String args[])throws Exception
+	{
+	BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+	String s=bf.readLine();
+	if(s.charAt(0)==s.charAt(s.length()-1))
+	{
+		System.out.println("Valid");
+	}
+	else
+		System.out.println("Invalid");
+	}
+}
